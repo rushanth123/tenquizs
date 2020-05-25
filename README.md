@@ -1,1 +1,1 @@
-# tenquizs
+# quiz

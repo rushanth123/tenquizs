@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+	<title>quiz in Javascript </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+	<div class="question-number">
+		<h3>question  <span class="question-num-value"> </span>of
+			<span class="total-question">  </span></h3>
+			<div class="question">
+ 
+			</div>
+				<div class="options">
+					<div id="0" class="option1 alll" onclick="check(this)" ></div>
+					<div id="1" class="option2" onclick="check(this)" ></div>
+					<div id="2" class="option3 hide" onclick="check(this)" > </div>
+					<div id="3" class="option4 hide" onclick="check(this)" ></div>
+				</div>
+
+		<div class="button">
+			<!-- <input type="button" value="" class="btn"> -->
+			<button type="button" value="" class="btn" onclick="next()">Next</button>
+		</div>
+		<div class="answers-tracker" id="answers-tracker">
+			
+		</div>
+	</div>
+
+		<div class="quiz-over ">
+			<div class="box">
+				<h1>
+					Good try <br>
+					you got <span class="correct-answers"></span>
+					out of <span class="total-question2"></span>
+					that's <span class="percentage"></span>
+				</h1>
+				<button type="button" onclick="tryAgain()">try again</button>
+			</div>
+		</div>
+
+</div>
+ <script src="script.js" defer></script>
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+</body>
+</html>
